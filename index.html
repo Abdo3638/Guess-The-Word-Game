@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess The Word Game</title>
+  </head>
+  <body>
+    <h1>Guess The Word</h1>
+    <div class="streak">
+      <span class="counter">🔥 Streak: <span id="streak-count">0</span></span>
+      <span class="bar"><span class="filler"></span></span>
+    </div>
+    <div class="streak-records">
+      <p>Your <span>Last</span>  streak is <span class="current-streak">0</span></p>
+      <p>Your <span>Best</span>  streak is <span class="best-streak">0</span></p>
+    </div>
+    <div class="container">
+      <div class="tries">
+        <div class="first-try try active-try">
+          <h3 class="active try-number">Try 1</h3>
+          <input class="active" maxlength="1" type="text" />
+          <input class="active" maxlength="1" type="text" />
+          <input class="active" maxlength="1" type="text" />
+          <input class="active" maxlength="1" type="text" />
+          <input class="active" maxlength="1" type="text" />
+          <input class="active" maxlength="1" type="text" />
+        </div>
+        <div class="second-try try">
+          <h3 class="try-number">Try 2</h3>
+          <input maxlength="1" type="text" />
+          <input maxlength="1" type="text" />
+          <input maxlength="1" type="text" />
+          <input maxlength="1" type="text" />
+          <input maxlength="1" type="text" />
+          <input maxlength="1" type="text" />
+        </div>
+        <div class="third-try try">
+          <h3 class="try-number">Try 3</h3>
+          <input maxlength="1" type="text" />
+          <input maxlength="1" type="text" />
+          <input maxlength="1" type="text" />
+          <input maxlength="1" type="text" />
+          <input maxlength="1" type="text" />
+          <input maxlength="1" type="text" />
+        </div>
+        <div class="fourth-try try">
+          <h3 class="try-number">Try 4</h3>
+          <input maxlength="1" type="text" />
+          <input maxlength="1" type="text" />
+          <input maxlength="1" type="text" />
+          <input maxlength="1" type="text" />
+          <input maxlength="1" type="text" />
+          <input maxlength="1" type="text" />
+        </div>
+        <div class="fifth-try try">
+          <h3 class="try-number">Try 5</h3>
+          <input maxlength="1" type="text" />
+          <input maxlength="1" type="text" />
+          <input maxlength="1" type="text" />
+          <input maxlength="1" type="text" />
+          <input maxlength="1" type="text" />
+          <input maxlength="1" type="text" />
+        </div>
+        <div class="check-hints">
+          <button class="check-word">Check Word</button>
+          <button class="hints"><span>3</span> Hints</button>
+        </div>
+      </div>
+      <div class="game-info">
+        <h2>Key Colors</h2>
+        <div class="colors">
+          <div class="green-info">
+            <div class="green"></div>
+            <p class="color-info">Letter Is Right & In Place.</p>
+          </div>
+          <div class="orange-info">
+            <div class="orange"></div>
+            <p class="color-info">Letter Is Right But Not In Place.</p>
+          </div>
+          <div class="grey-info">
+            <div class="grey"></div>
+            <p class="color-info">Letter Is Not Right & Not In Place.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
